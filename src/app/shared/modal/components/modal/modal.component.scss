@@ -1,0 +1,47 @@
+@import '../../../../../styles/variables';
+
+.alert {
+  margin: -23px -32px 18px;
+}
+
+.close-full {
+  position: relative;
+  padding-right: 28px;
+  padding-left: 12px;
+  width: 80px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  user-select: none;
+  color: #a5a5a5;
+  background-color: red;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 100px;
+  transition: .2s border-color ease-out 0s;
+
+  &:before,
+  &:after {
+    position: absolute;
+    top: 0;
+    right: 12px;
+    bottom: 0;
+    margin: auto;
+    width: 2px;
+    height: 16px;
+    content: '';
+    background-color: #a5a5a5;
+  }
+
+  &:before {
+    transform: rotate(-45deg);
+  }
+
+  &:after {
+    transform: rotate(45deg);
+  }
+}

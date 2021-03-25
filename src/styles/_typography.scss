@@ -1,0 +1,75 @@
+@font-face {
+    font-family: RobotoFallback;
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'), url(fonts/Roboto-300.woff2) format('woff2'),
+        url(fonts/Roboto-300.woff) format('woff'), url(fonts/Roboto-300.ttf) format('truetype');
+}
+@font-face {
+    font-family: RobotoFallback;
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url(fonts/Roboto-400.woff2) format('woff2'), url(fonts/Roboto-400.woff) format('woff'),
+        url(fonts/Roboto-400.ttf) format('truetype');
+}
+@font-face {
+    font-family: RobotoFallback;
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url(fonts/Roboto-500.woff2) format('woff2'),
+        url(fonts/Roboto-500.woff) format('woff'), url(fonts/Roboto-500.ttf) format('truetype');
+}
+@font-face {
+    font-family: RobotoFallback;
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url(fonts/Roboto-700.woff2) format('woff2'), url(fonts/Roboto-700.woff) format('woff'),
+        url(fonts/Roboto-700.ttf) format('truetype');
+}
+
+
+h1 {
+  font-family: RobotoFallback;
+    font-weight: 300;
+    font-size: 96px;
+    letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: RobotoFallback;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: -0.5px;
+}
+
+h3 {
+  font-family: RobotoFallback;
+    font-weight: 400;
+    font-size: 48px;
+}
+
+
+
+h5 {
+  font-family: RobotoFallback;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+h6 {
+  font-family: RobotoFallback;
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 0.15px;
+}
+
+label {
+  font-family: RobotoFallback;
+  letter-spacing: 0.3px;
+  font-size: 19px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+a {
+  color: #ff5722;
+}

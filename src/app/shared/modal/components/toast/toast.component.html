@@ -1,0 +1,11 @@
+<dx-toast
+    [closeOnOutsideClick]="closeOnOutsideClick"
+    [contentTemplate]="'toast-template'"
+    [displayTime]="displayTime"
+    [(visible)]="visible"
+    [width]="width"
+    (onHidden)="closeEvent()"
+>
+    <div *dxTemplate="let data of 'toast-template'">
+    </div>
+</dx-toast>

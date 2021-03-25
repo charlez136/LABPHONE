@@ -1,0 +1,17 @@
+<div *ngIf="itemErr" class="alert alert-danger" role="alert">
+  Продукт с таким названием уже существует
+</div>
+<label>Название</label>
+<dx-text-box class="mb-3" [(value)]="item.name"></dx-text-box>
+<label>Описание</label>
+<dx-text-box class="mb-3" [(value)]="item.description"></dx-text-box>
+<label>Парт. номер</label>
+<dx-text-box class="mb-3" [(value)]="item.partNum"></dx-text-box>
+<label>Цена</label>
+<dx-text-box class="mb-4" [(value)]="item.price"></dx-text-box>
+<dx-button
+  class="d-block w-50 ml-auto mr-auto"
+  stylingMode="contained"
+  [text]="isChange ? 'Сохранить' : 'Добавить'"
+  (onClick)="onSubmit()"
+></dx-button>

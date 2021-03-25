@@ -1,0 +1,31 @@
+<header>
+  <div class="container d-flex justify-content-between">
+    <ul>
+      <li><a routerLink="/home">Главная</a></li>
+      <li><a routerLink="/about">О нас</a></li>
+      <li><a routerLink="/contacts">Контакты</a></li>
+      <li><a routerLink="/shipment">Доставка</a></li>
+      <li><a routerLink="/pay">Оплата</a></li>
+      <li><a routerLink="/refund">Возврат</a></li>
+    </ul>
+    <ul *ngIf="!getUser">
+      <li><a routerLink="/login">Вход</a></li>
+      <li><a routerLink="/register">Регистрация</a></li>
+    </ul>
+    <div *ngIf="getUser" class="d-flex user-menu-lable" id="userLabel">
+      <span>{{ getUser.firstName }}</span>
+      <span class="ml-3">{{ getUser.lastName }}</span>
+    </div>
+  </div>
+</header>
+<div class="container-app">
+  <router-outlet></router-outlet>
+</div>
+<dx-context-menu
+  [items]="items"
+  [width]="200"
+  showEvent="dxclick"
+  target="#userLabel"
+  (onItemClick)="itemClick($event)"
+>
+</dx-context-menu>

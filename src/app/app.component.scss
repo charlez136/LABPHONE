@@ -1,0 +1,39 @@
+header{
+  background-color: #035aa6;
+  width: 100%;
+  position: fixed;
+  height: 50px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding-inline-start: 0px;
+  }
+
+  li {
+    float: left;
+  }
+
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 13px 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+background-color: #0172d4;
+  }
+}
+.container-app{
+padding-top: 50px;
+}
+
+.user-menu-lable{
+  align-items: center;
+  cursor: default;
+  span{
+    color: #fff;
+  }
+}

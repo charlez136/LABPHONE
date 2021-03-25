@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="d-flex justify-content-between mt-5 mb-5">
+    <h2>Список товаров</h2>
+    <button
+      *ngIf="getUser?.role"
+      class="btn btn-primary"
+      (click)="openModalCreate()"
+    >
+      Добавить
+    </button>
+  </div>
+  <dx-data-grid
+    [dataSource]="items"
+    [columns]="columns"
+    [sorting]="sorting"
+    [showBorders]="true"
+    noDataText="Нет данных"
+    (onRowClick)="openOnEdit($event)"
+  >
+    <dxo-pager
+      [showPageSizeSelector]="true"
+      [allowedPageSizes]="[10, 25, 50, 100]"
+    ></dxo-pager>
+    <dxo-paging [pageSize]="10"></dxo-paging>
+    <dxo-filter-row
+      [visible]="true"
+      [operationDescriptions]="operationDescriptions"
+      resetOperationText="Очистить"
+    ></dxo-filter-row>
+  </dx-data-grid>
+</div>
